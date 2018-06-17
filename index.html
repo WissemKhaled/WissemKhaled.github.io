@@ -6,93 +6,115 @@
 		<link rel="stylesheet" type="text/css" href="./stylePF.css">
 		<link rel="stylesheet/less" type="text/css" href="./style/styles.less" />
 		<link rel="icon" href="./img/favicon.ico">
+		<link href="http://fonts.googleapis.com/css?family=PT+Sans|Kreon" rel="stylesheet" type="text/css">
+
 		<script src="./style/less.js" type="text/javascript"></script>
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
 		<script type="text/javascript" src="./script/script.js"></script>
-		<link href="http://fonts.googleapis.com/css?family=PT+Sans|Kreon" rel="stylesheet" type="text/css">
+
 	</head>
 	<body class="no-padding-margin full-width">
-		<header id="homeAncre" >
-			<h1> Wissem Khaled DevWeb</h1>
-		</header>
-		<aside class="style-aside shadow-aside">
-				<nav class="style-nav-aside">
-					<ul class="flex-ul-aside menu-button link-no-style no-padding-margin">
-						<a data-target="homeAncre" href="#homeAncre"><li>home</li></a>
-						<a data-target="skillAncre" href="#skillAncre"><li>competence</li></a>
-						<a data-target="projectAncre" href="#projectAncre"><li>project</li></a>
-						<a data-target="otherSkillAcnre" href="#otherSkillAncre"><li>other</li></a>
-						<a data-target="contactAncre" href="#contactAncre"><li>contact</li></a>
+		<header>
+			<nav class="style-nav">
+					<ul class="flex-ul menu-button link-no-style no-padding-margin ul-style">
+						<a data-target="homeAncre" href="#homeAncre"><li>A propos</li></a>
+						<a data-target="skillAncre" href="#skillAncre"><li>Compétence</li></a>
+						<a data-target="projectAncre" href="#projectAncre"><li>Projet</li></a>
+						<a data-target="contactAncre" href="#contactAncre"><li>Contact</li></a>
 					</ul>
 				</nav>
-		</aside>
-		<main class="style-main">
-			<section>
+		</header>
+		<main>
+			<section id="homeAncre" >
 				<div class="flex-center">
 					<h2 class="title-big">A Propos</h2>
-					<p class="style-text">Je m'appelle Wissem Khaled, j'ai commencé le développement web à la It-Akademy depuis fin Mars 2018.
-						 J'aime expérimenter, découvrir et apprendre au fur et à mesure de mes projets pros et perso.
+					<p class="style-text">Je m'appelle Wissem Khaled, j'ai commencé le développement web à l'It-Akademy depuis fin Mars 2018.
+						 J'aime expérimenter, découvrir et apprendre au fur et à mesure de mes projets professionnels et personnels.
 					</p>
-			</div>
+				</div>
 			</section>
 			<section id="skillAncre">
 				<div   class=" flex-center ">
 					<h2 class="title-big">Mes Compétences </h2>
-					<p class="style-text">
-						<div>
-							<h3>Langages / Librairie / Framwork</h3>
-							<ul class="no-padding-margin">
-								<li> HTML/CSS : Débutant</li>
-								<li> Javascript : Débutant </li>
-								<li> Bash : Débutant </li>
-								<li> PHP : Débutant </li>
-								<li> Laravel : Débutant</li>
-								<li> Jquery : Notion</li>
+					<div class="div-skill">
+						<div class="div-container-skill">
+							<h3>Langages / Librairie / Framwork :</h3>
+							<ul class="no-padding-margin ul-style flex-container">
+								<li><img class="svg" src="img/html5.svg"></li>
+								<li><img class="svg" src="img/css3.svg"></li>
+								<li><img class="svg" src="img/bash.svg"></li>								
+								<li><img class="svg" src="img/javascript.svg"></li>
+								<li><img class="svg" src="img/jquery.svg"></li>
+								<li><img class="svg" src="img/php.svg"></li>
+								<li><img class="svg" src="img/laravel.svg"></li>
 							</ul>
-						<h3>Technologies utilisés</h3>
-							<ul class="no-padding-margin">
-								<li> Git (versioning) : Débutant </li>
-								<li> Vagrant : Notion </li>
-								<li> AJAX - API : Notion</li>
+						</div>
+						<div class="div-container-skill">
+							<h3>Technologies utilisés :</h3>
+							<ul class="no-padding-margin ul-style flex-container">
+								<li><img class="svg" src="img/github.svg"></li>
+								<li><img class="svg" src="img/vagrant.svg"></li>
+								<li><img class="svg" src="img/ajax.svg"></li>
 							</ul>
+						</div>
 					</div>
-					</div>
+				</div>
 			</section>
 			<section  id="projectAncre" >
 				<div class="flex-center">
 					<h2 class="title-big">Projets Dev </h2>
-					<p class="style-text">
-						Aller sur mon GitHub pour les petits projet que j'ai fais.
-					</p>
-					<button><a href="https://github.com/WissemKhaled">GitHub</a></button>
-				</div>
-			</section>
-			<section id="otherSkillAncre" >
-				<div class="flex-center">
-					<h2 class="title-big" >Mes Autres Compétences</h2>
-					<p class="style-text">
-						<ul class="no-padding-margin">
-							<li>Unity : Débutant </li>
-							<li>UDK : Débutant </li>
-							<li>Visio : Intermédiaire </li>
-						</ul>
-					</p>
+					<ul class="no-padding-margin flex-container ul-style">
+						<!-- <div class="container-project"> -->
+							<li>
+								<a href="">
+									<div class="div-container-project">
+										<img src="img/tmpImage.png" class="size-img">
+										<h4>PlaceHorlder</h4>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="div-container-project">
+										<img src="img/tmpImage.png" class="size-img">
+										<h4>PlaceHorlder</h4>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="div-container-project">
+										<img src="img/tmpImage.png" class="size-img">
+										<h4>PlaceHorlder</h4>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="div-container-project">
+										<img src="img/tmpImage.png" class="size-img">
+										<h4>PlaceHorlder</h4>
+									</div>
+								</a>
+							</li>
+						<!--</div> -->
+					</ul>
 				</div>
 			</section>
 			<section id="contactAncre">
 				<div  class=" flex-center">
 					<h2 class="title-big">Contact</h2>
 					<p class="style-text">
-					Si vous souhaitez me contacter, envoyé mon un email à cette adresse :<br/>wissemkhaled69@gmail.com<br/>
+					N'hésitez pas à me contacter à cette adresse :<br/>wissemkhaled69@gmail.com<br/>
 					</p>
 				</div>
 			</section>
 			</main>
 		<footer class="style-footer">
-			<ul class="style-liste-footer footer-button link-no-style no-padding-margin">
-				<li><a href="www.linkedin.com/in/wissem-khaled-07410565">Linkedin</a></li>
+			<ul class="style-liste-footer footer-button no-padding-margin ul-style">
+				<li><a href="https://www.linkedin.com/in/wissem-khaled-07410565">Linkedin</a></li>
 				<li><a href="https://github.com/WissemKhaled">GitHub</a></li>
-				<li><a href="#">Email</a></li>
+				<li><a href="">Email</a></li>
 			</ul>
 		</footer>
 	</body>

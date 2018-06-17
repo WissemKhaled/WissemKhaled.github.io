@@ -2,7 +2,11 @@
   font-family: "Overwatch";
   src: url("../fonts/big_noodle_titling.ttf");
 }
-
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
 h1 {
   padding-left: 170px;
   margin-top: 0;
@@ -12,169 +16,196 @@ h1 {
   font-size: 2rem;
   margin-bottom: 0;
 }
-
 section {
-	height: 100vh;
-  display: flex;
-  align-items: center;
-}
-body {
-      line-height: 1.4;
-      font-family: PT Sans,sans-serif;
-      color: #333;
-      font-size: 14px;
-      background-color: #f6f6f6;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-ul {
+
+/* Body Style */
+.full-width {
+  height: 100vh;
+  line-height: 1.4;
+   font-family: PT Sans,sans-serif;
+  color: #333;
+  font-size: 14px;
+  main {
+     background-image: url("../img/dust_scratches.png");
+    background-color: rgba(0,0,0, 0.5);
+    section:last-child {
+      height: 95vh;
+    }
+  }
+}
+
+.no-padding-margin {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-center {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  .title-big {
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+    padding: 1rem 0;
+    margin: 0 0 1rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .style-text {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 175%;
+  }
+}
+
+.ul-style {
   list-style: none;
   text-align: center;
   font-size: 1rem;
   font-weight: 400;
   line-height: 175%;
-}
-.title-big {
-  border-top: 1px dashed black;
-  border-bottom: 1px dashed black;
-  padding: 1rem 0;
-  margin: 0 0 1rem;
-  font-size: 2rem;
-  font-weight: 400;
-  margin: 0;
-}
-.full-width {
-	height: 100vh;
-	main {
-		section:last-child {
-			height: 95vh;
-		}
-	}
-}
-.no-padding-margin {
-  margin: 0;
-  padding: 0;
-}
-.style-nav-aside {
- 	background-color: #363a5d;
- 	width: 150px;
+} 
 
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
-
+.svg {
+  height: 75px;
 }
-
-.style-aside {
- 	display: flex;
- 	position: fixed;
- 	top: 10vh;
-  height: 80vh;
-  -webkit-box-shadow: 15px 12px 18px rgba(0,0,0,0.6);
-  border-radius: 15px;
-}
-
-.flex-ul-aside {
- 	display: flex;
-	flex-direction: column;
-  align-items: center;
-  height: 100%;
-  width: 100%;
- 	justify-content: space-evenly;
-}
-.style-text {
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 175%;
-}
-.style-main {
-  	margin-left: 175px;
-}
-.style-liste-footer {
-  	display: flex;
-  	flex-direction: row;
-  	justify-content: space-around;
-}
-.style-footer {
-	height: 5vh;
-  	margin-left: 150px;
-  	position: relative;
+/* Header NavBar Style */
+.style-nav {
+    background-color: rgba(59, 124, 177, 0.95);
+    height: 50px;
+    .menu-button  {
+      height: 100%;
+      display: flex;
+      text-transform: uppercase;
+      transition: color 0.5s ease;
+      font-size: 1.5rem; 
+      letter-spacing: 0.025em;
+      font-family: "Overwatch", regular;
+      align-items: center;
+      justify-content: center;
+      a {
+        color: white;
+      }
+    }
+    .flex-ul {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      justify-content: space-evenly;
+    }
 }
 .link-no-style > a {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  list-style: none;
-  text-decoration: none;
-  width: 80%;
-  height: 4%;
-  background-color: #ff9c00;
-  border-radius: 2px;
-  transition: background-color 0.5s ease;
-  border: 3px solid transparent;
-  line-height: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    width: 80%;
+    height: 100%;
+    border-radius: 2px;
+    transition: background-color 0.5s ease;
+    line-height: 1;
   &:hover {
-    background-color: #ffb033;
+    background-color: #f85c3c;
     li {
-      color: #fff;;
+      color: #fff;
     }
   }
 }
+ /* Skill Section Style */
 
-button {
-    text-transform: uppercase;
-    transition: color 0.5s ease;
-    font-size: 1.5rem;
-    letter-spacing: 0.025em;
-    font-family: "Overwatch", regular;
-    a {
-      color: #3a46ab;
-      text-decoration: none;
+ .flex-container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  li {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.div-skill {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-direction: column;
+    .div-container-skill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+       padding-top: 15px;
+      padding-bottom: 15px;
+      h3 {
+        text-transform: uppercase;
+        width: 100%;
+        margin: 0;
+        padding-bottom: 50px;
+        font-size: 1.25rem;
+        font-weight: normal;
+      }
     }
 }
-.menu-button > a > li {
-	color: white;
- 	text-transform: uppercase;
-  transition: color 0.5s ease;
-  font-size: 1.5rem;
-  letter-spacing: 0.025em;
-  font-family: "Overwatch", regular;
+/* Project Section Style */
+.div-container-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  .size-img {
+     width: 300px;
+  }
 }
 
-.footer-button > li > a {
+/* Footer Style */
+
+.style-footer {
+	height: 5vh;
+  position: relative;
+  background-image: url("../img/dust_scratches.png");
+  background-color: rgba(0,0,0, 0.5);
+  .style-liste-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  li > a {
   padding-left: 10px;
-	padding-right: 10px;
- 	color: grey;
-	text-decoration: none;
+  padding-right: 10px;
+  color: grey;
+  text-decoration: none;
   font-size: 1.1rem;
   letter-spacing: 0.06em;
   font-weight: 600;
-	text-transform: uppercase;
-	transition: color 0.5s ease;
-	&:hover {
-  	color: black;
-	};
+  text-transform: uppercase;
+  transition: color 0.5s ease;
+    &:hover {
+      color: black;
+    };
+  }
 }
 
-.flex-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-	align-items: center;
-  width: 80vw;
-  /* height: 50%; */
-  padding: 20px;
-  margin: 20px;
-  box-shadow: 25px 22px 7px -15px rgba(0,0,0,0.19);
-  background-image: url('../img/cardPatter.png');
-  border: 1px solid;
-  color: black;
-}
+
 
 
 /*@media (max-width:700px) and (min-width:400px) and (max-height: 500px) and (min-height:300px){
   .flex-center {
   background-color: blue;
-    height: 75%; 
+    height: 75%;
   }
 }
 */
