@@ -41,6 +41,6 @@ $(document).keydown(function (e) {
 });
 
 //Alert Email
-$(document).on("click", ".footer-button>li>a", function () {
+$(document).on("click", "#email", function () {
     alert('Mon adresse Email : wissemkhaled69@gmail.com (Le temps que j\'implémente un formulaire)');
 });
