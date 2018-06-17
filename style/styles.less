@@ -133,10 +133,10 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
   li {
-    padding-left: 15px;
-    padding-right: 15px;
+   max-height: 300px;
   }
 }
 
@@ -172,6 +172,15 @@ section {
   }
 }
 
+.max-container {
+      max-width: 400px;
+      a {
+        list-style: none;
+        color: #333;
+        text-decoration: none;
+      }
+}
+
 /* Footer Style */
 
 .style-footer {
@@ -198,9 +207,6 @@ section {
     };
   }
 }
-
-
-
 
 /*@media (max-width:700px) and (min-width:400px) and (max-height: 500px) and (min-height:300px){
   .flex-center {

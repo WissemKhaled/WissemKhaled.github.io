@@ -23,7 +23,7 @@ function onScroll(event){
     });
 }
 
-//KONAMI CODE
+//KONAMI Code
 var k = [38, 38, 40, 40, 37, 39, 37, 39,66,65],
 n = 0;
 $(document).keydown(function (e) {
@@ -40,23 +40,7 @@ $(document).keydown(function (e) {
     }
 });
 
-
-$(document).ready(function () {
-    $('.menu-button>a').on('click', function (e) {
-        e.preventDefault();
-        $(document).off("scroll");
-        let target = this.hash,
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top+2
-        }, 1500, 'swing', function () {
-            window.location.hash = target;
-            $(document).on("scroll", onScroll);
-        });
-    });
-});
-
+//Alert Email
 $(document).on("click", ".footer-button>li>a", function () {
     alert('Mon adresse Email : wissemkhaled69@gmail.com (Le temps que j\'implémente un formulaire)');
 });
- 
