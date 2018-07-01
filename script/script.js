@@ -23,6 +23,12 @@ function onScroll(event){
     });
 }
 
+// Scale Image
+
+$(document).on("click","img", function() {
+    $('data-view ="hidden"').append("Some");
+})
+
 //KONAMI Code
 var k = [38, 38, 40, 40, 37, 39, 37, 39,66,65],
 n = 0;
