@@ -106,7 +106,7 @@ section {
   font-size: 1rem;
   font-weight: 400;
   line-height: 175%;
-} 
+}
 
 .svg {
   height: 75px;
@@ -120,7 +120,7 @@ section {
       display: flex;
       text-transform: uppercase;
       transition: color 0.5s ease;
-      font-size: 1.5rem; 
+      font-size: 1.5rem;
       letter-spacing: 0.025em;
       font-family: "Overwatch", regular;
       align-items: center;
@@ -250,14 +250,6 @@ section {
   }
 }
 
-/*@media (max-width:700px) and (min-width:400px) and (max-height: 500px) and (min-height:300px){
-  .flex-center {
-  background-color: blue;
-    height: 75%;
-  }
-}
-
-*/
 
 @media screen and (min-width: 1180px) {
   .ul-style__grid {
@@ -265,4 +257,53 @@ section {
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 33% 33% 33%;
   }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    padding-top: 5rem;
+    width: 100%;
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+
+}
+
+@keyframes zoom {
+    from {
+      transform:scale(0)
+    }
+    to
+    {transform:scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.close:hover,.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }
